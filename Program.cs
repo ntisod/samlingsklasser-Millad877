@@ -18,13 +18,15 @@ namespace Samlingsklasser
             Console.WriteLine("5. Tärningskast med SortedList (Övning 1).");
             Console.WriteLine("6. Queue-exempel.");
             Console.WriteLine("7. Stack-exempel.");
+            Console.WriteLine("8. Övning2.");
 
             //Läs in menyval
             Console.Write("Ange siffra för vad du vill göra: ");
             string val = Console.ReadLine();
 
             //Använd en switch-sats för att anropa den metod som hör ihop med menyvalet.
-            switch(val){
+            switch (val)
+            {
                 case "1":
                     IntegerLista();
                     break;
@@ -46,9 +48,17 @@ namespace Samlingsklasser
                 case "7":
                     StackExempel();
                     break;
+                case "8":
+                    Övning2Medelvärde();
+                    break;
             }
 
             Console.ReadKey();
+        }
+
+        static void Övning2Medelvärde()
+        {
+            
         }
 
         static void DictionaryExempel()
